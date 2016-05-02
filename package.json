@@ -1,8 +1,7 @@
 {
-  "name": "dribble-dashboard",
+  "name": "budgeting-dashboard-dashboard",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
     "start": "http-server"
   },
