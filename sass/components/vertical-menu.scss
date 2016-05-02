@@ -1,0 +1,68 @@
+.vertical-menu {
+
+}
+
+.vertical-menu--dark {
+  color: $text-primary-light;
+  background: inherit;
+}
+
+.vertical-menu--light {
+ color: $text-primary-dark;
+ background: inherit;
+}
+
+.vertical-menu__item {
+  display: block;
+}
+
+.menu-item {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.menu-item--icon {
+  padding-left: 56px;
+}
+
+.menu-item--light-border-top {
+  border-top: $text-divider-light 8px solid;
+  height: 56px;
+}
+
+.menu-item--dark-border-top {
+  border-top: $text-divider-dark 8px solid;
+}
+
+.menu-item__icon {
+  font-size: 32px;
+  vertical-align: middle;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 12px;
+  padding-top: 8px;
+  width: 60px;
+  height: 48px;
+}
+
+.menu-item__text {
+  display: block;
+  text-decoration: none;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 16px;
+}
+
+@each $clr, $colour-list in $colour-list-all {
+  $colour: map-get($colour-list, "base");
+  .menu-item--#{$clr} {
+    box-shadow: inset 4px 0 0 $colour;
+  }
+  .menu-item__icon--active-#{$clr} {
+    background: $colour;
+    color: $text-primary-light;
+  }
+}

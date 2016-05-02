@@ -1,0 +1,12 @@
+$text-primary-dark: opacify(#000, .87);
+$text-secondary-dark: opacify(#000, .54);
+$text-disabled-dark: opacify(#000, .38);
+$text-divider-dark: opacify(#000, .12);
+
+$text-primary-light: opacify(#FFF, 1);
+$text-secondary-light: opacify(#FFF, .70);
+$text-disabled-light: opacify(#FFF, .50);
+$text-divider-light: opacify(#FFF, .12);
+
+$text-primary-colour: $indigo;
+$text-accent-colour: $pink;

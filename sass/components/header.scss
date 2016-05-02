@@ -1,0 +1,42 @@
+.header {
+  background: $grey-900;
+  color: $text-primary-light;
+  height: 100%;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header__brand {
+  float: left;
+  line-height: 40px;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.header__user {
+  float: right;
+  height: 100%;
+}
+
+.user-dropdown__username {
+  display: inline-block;
+  margin-right: 16px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.user-dropdown__avatar {
+  display: inline-block;
+  margin-right: 16px;
+  height: 32px;
+}
+
+.avatar-image--32 {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
